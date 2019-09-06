@@ -14,6 +14,7 @@ By using the JUCER file you can change the file output types and change a variet
 
 A BIT ABOOUT THE CODE:
 The Filter.cpp and Filter.h file is the complete filtering library. To use the filter for real time audio applications construct it like so:
+
 Constructor - MyFilter filter[NUM_CHANNELS]
 Before playback begins - filter[channel].prepareToPlay(sampleRate, samplesPerBlock)
 
