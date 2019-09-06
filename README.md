@@ -19,11 +19,14 @@ Constructor - MyFilter filter[NUM_CHANNELS]
 Before playback begins - filter[channel].prepareToPlay(sampleRate, samplesPerBlock)
 
 FIR/IIR filter types use - outputData[sample] = filter[channel].FIR_IIR_Filter_Method_In_Class(inputSample, frequency)
+
 NOTE: FIR/IIR filters use (Frequency/2000) * 0.49 as frequency.
 
 Biquad/Butterworth filter types use - filter[channel].setBiquad/Butter(filterType, frequency, Q, peakGain)
 outputData[sample] = filter[channel].processBiquad/Butter(inputSample)
+
 NOTE: frequency is true frequency in Hz, 20-20000. 
+
 NOTE2: There is a known issue that causes the Biquad filter to clip and mute the channel when first changing to the Biquad filter type, I haven't been able to find the error but pausing the audio and unmuting resolves this issue, the issue is not replicated after the first clipping error.
 
 For non-real time filtering the process is similar.
