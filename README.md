@@ -1,7 +1,7 @@
 # JUCE-Audio-Filter
 Audio filtering plugin using the JUCE framework using FIR, IIR, Butterworth and Biquad filters.
 
-![Alt text](/JUCE-Audio-Filter/blob/master/Filter.png?raw=true "Filter GUI")
+![Alt text](https://github.com/MattH96/JUCE-Audio-Filter/blob/master/Filter.png?raw=true "Filter GUI")
 
 TO USE:
 Simply place the .vst3 file into a digital audio workstation, I recommend Reaper but Garage Band, Ableton, and a variety of other DAWs work just fine.
